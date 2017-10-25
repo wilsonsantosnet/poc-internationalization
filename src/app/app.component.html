@@ -1,0 +1,12 @@
+<dl>
+   <dt>Data</dt>
+   <dt>{{hoje  | date : 'dd/MM/yyyy' }}</dt>
+   <dt>Valor</dt>
+   <dt>{{valor | currency:'BRL':true }}</dt>
+   <dt>Input</dt>
+   <dt><input type="text"[ngModel]="preco | myPipe" 
+   name="InputValorDecimal" (ngModelChange)="onModelChange($event)" (change)="onChange()"/></dt>
+  <dt><input type="text"[ngModel]="qtd" name="InputQtdDecimal" (change)="onChange()"/></dt>
+   <dt>total</dt>
+   <dt>{{total | currency:'BRL':true }}</dt>
+</dl>
